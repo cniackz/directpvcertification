@@ -55,7 +55,7 @@ DriverInfo:
     block: false
 
     # Exec a file in the volume
-    exec: false
+    exec: true
 
     # Support for volume limits
     volumeLimits: false
