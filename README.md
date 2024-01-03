@@ -65,6 +65,39 @@ Supported OpenShift Virtualization features:
 error running options: 4 fail, 33 pass, 217 skip (7m0s)error: 4 fail, 33 pass, 217 skip (7m0s)
 ```
 
+* With real OpenShift Cluster with at least 3 control planes:
+
+```
+Storage Capabilities (guaranteed only on full CSI test suite with 0 fails)
+==========================================================================
+Driver short name:                         directpv
+Driver name:                               directpv.min.io
+Storage class:                             storageclass.yaml
+Supported OpenShift / CSI features:
+  Persistent volumes:                      true
+  Raw block mode:                          false
+  FSGroup:                                 true
+  Executable files on a volume:            true
+  Volume snapshots:                        false
+  Volume cloning:                          false
+  Use volume from multiple pods on a node: false
+  ReadWriteMany access mode:               false
+  Volume expansion for controller:         false
+  Volume expansion for node:               true
+  Volume limits:                           false
+  Volume can run on single node:           true
+  Topology:                                true
+Supported OpenShift Virtualization features:
+  Raw block VM disks:                      false
+  Live migration:                          false
+  VM snapshots:                            false
+  Storage-assisted cloning:                false
+
+error running options: 5 fail, 36 pass, 213 skip (8m17s)error: 5 fail, 36 pass, 213 skip (8m17s)
+
+```
+
+
 ### With exec as true, results are:
 
 ```sh
