@@ -1,3 +1,7 @@
+### RedHat Case:
+
+* https://rhcert.connect.redhat.com/#/cases/03629102
+
 # directpvcertification
 DirectPV Certification Files
 
