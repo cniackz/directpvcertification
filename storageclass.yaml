@@ -15,6 +15,8 @@ metadata:
     directpv.min.io/created-by: kubectl-directpv
     directpv.min.io/version: v1beta1
   name: directpv-min-io
+parameters:
+  csi.storage.k8s.io/fstype: "xfs"
 provisioner: directpv-min-io
 reclaimPolicy: Delete
 volumeBindingMode: WaitForFirstConsumer
