@@ -1,0 +1,79 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: kubevirt-storage-checkup-copper-ocelot-38
+  namespace: kubevirt-checkups
+  uid: aa3a0490-a396-4324-aedd-7c2305f1a9b1
+  resourceVersion: '207292533'
+  creationTimestamp: '2025-09-15T18:02:25Z'
+  labels:
+    kiagnose/checkup-type: kubevirt-vm-storage
+  managedFields:
+    - manager: Mozilla
+      operation: Update
+      apiVersion: v1
+      time: '2025-09-15T18:02:25Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:data':
+          .: {}
+          'f:spec.timeout': {}
+        'f:metadata':
+          'f:labels':
+            .: {}
+            'f:kiagnose/checkup-type': {}
+    - manager: kubevirt-storage-checkup
+      operation: Update
+      apiVersion: v1
+      time: '2025-09-15T18:06:32Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:data':
+          'f:status.result.vmLiveMigration': {}
+          'f:status.result.vmVolumeClone': {}
+          'f:status.result.ocpVersion': {}
+          'f:status.result.storageProfilesWithSpecClaimPropertySets': {}
+          'f:status.failureReason': {}
+          'f:status.result.vmsWithNonVirtRbdStorageClass': {}
+          'f:status.result.concurrentVMBoot': {}
+          'f:status.result.pvcBound': {}
+          'f:status.result.storageProfileMissingVolumeSnapshotClass': {}
+          'f:status.result.goldenImagesNotUpToDate': {}
+          'f:status.result.goldenImagesNoDataSource': {}
+          'f:status.result.storageProfilesWithRWX': {}
+          'f:status.completionTimestamp': {}
+          'f:status.result.vmHotplugVolume': {}
+          'f:status.result.defaultStorageClass': {}
+          'f:status.result.cnvVersion': {}
+          'f:status.result.vmBootFromGoldenImage': {}
+          'f:status.result.storageProfilesWithSmartClone': {}
+          'f:status.result.storageProfilesWithEmptyClaimPropertySets': {}
+          'f:status.succeeded': {}
+          'f:status.startTimestamp': {}
+          'f:status.result.vmsWithUnsetEfsStorageClass': {}
+data:
+  status.result.goldenImagesNotUpToDate: ''
+  status.result.cnvVersion: 4.17.21
+  status.succeeded: 'true'
+  status.result.defaultStorageClass: directpv-min-io
+  status.result.vmHotplugVolume: |-
+    VMI "vmi-under-test-qgv6h" hotplug volume ready
+    VMI "vmi-under-test-qgv6h" hotplug volume removed
+  status.result.vmBootFromGoldenImage: VMI "vmi-under-test-qgv6h" successfully booted
+  status.result.storageProfilesWithSmartClone: ''
+  status.result.storageProfilesWithEmptyClaimPropertySets: ''
+  spec.timeout: 10m
+  status.startTimestamp: '2025-09-15T18:02:27Z'
+  status.result.storageProfilesWithSpecClaimPropertySets: directpv-min-io
+  status.result.ocpVersion: 4.17.15
+  status.failureReason: ''
+  status.result.vmsWithUnsetEfsStorageClass: ''
+  status.result.concurrentVMBoot: Boot completed on all VMs on time
+  status.result.vmLiveMigration: 'cannot migrate VMI: Backend storage PVC is not RWX'
+  status.result.pvcBound: PVC "checkup-pvc" bound
+  status.result.vmVolumeClone: 'DV cloneType: "copy"'
+  status.result.storageProfileMissingVolumeSnapshotClass: ''
+  status.result.vmsWithNonVirtRbdStorageClass: ''
+  status.result.goldenImagesNoDataSource: ''
+  status.result.storageProfilesWithRWX: ''
+  status.completionTimestamp: '2025-09-15T18:06:32Z'
