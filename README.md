@@ -1,3 +1,7 @@
+### How to run CSI Tests
+
+https://github.com/cniackz/public/wiki/How-to-run-CSI-Tests
+
 ### RedHat Case:
 
 * https://rhcert.connect.redhat.com/#/cases/03629102
