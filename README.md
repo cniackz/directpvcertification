@@ -189,6 +189,20 @@ Suite run returned error: 1 fail, 41 pass, 232 skip (8m8s)
 error running options: 1 fail, 41 pass, 232 skip (8m8s)error: 1 fail, 41 pass, 232 skip (8m8s)
 ```
 
+* Mon Sep 15 2025 with below: (failed to display the results but I obtained manually)
+
+```
+Writing junits.
+Writing JUnit report to e2e-monitor-tests__20250915-185436.xml
+Suite run returned error: failed due to a MonitorTest failure
+error running options: failed due to a MonitorTest failureerror: failed due to a MonitorTest failure
+```
+
+```
+76  passed with string "passed:"
+ 0  failed with string "failed:"
+472 skipped with string "skipped"
+```
 
 
 
