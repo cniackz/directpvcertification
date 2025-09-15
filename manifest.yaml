@@ -32,7 +32,7 @@ DriverInfo:
     prjquota: {}
 
   # Optional list of topology keys that the driver supports
-  TopologyKeys: ["directpv.min.io/identity","directpv.min.io/node"]
+  TopologyKeys: ["directpv.min.io/identity"]
 
   # Optional number of allowed topologies that the driver requires. Only relevenat if TopologyKeys is set
   NumAllowedTopologies: 2
